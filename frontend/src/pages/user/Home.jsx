@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import API from "../../api/Axios";
+import API from "../../api/axios.js";
 import MusicCard from "../../components/MusicCard";
 
 function Home() {

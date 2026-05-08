@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import API from "../../api/axios";
+import API from "../../api/axios.js";
 import { Navigate , useNavigate} from "react-router-dom";
 
 function CreateAlbum() {
