@@ -1,7 +1,7 @@
-import axios  from 'axios'
+import axios  from 'axios';
 
 const API = axios.create({
-    baseURL: "http://musicapp1.up.railway.app/api",
+    baseURL: "https://musicapp1.up.railway.app/api",
     withCredentials: true
 })
 
