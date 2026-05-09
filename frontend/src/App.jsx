@@ -8,7 +8,7 @@ import Navbar from "./components/Navbar";
   // User Import Pages 
 import Home from "./pages/Home";
 import Albums from "./pages/Albums";
-import AlbumDetail from "./pagesAlbumDetail";
+import AlbumDetail from "./pages/AlbumDetail";
 import CreatePlaylist from "./pages/CreatePlaylist";
 import MyPlaylists from "./pages/MyPlaylists";
 import MyPlaylistDetail from "./pages/MyPlaylistDetail";
