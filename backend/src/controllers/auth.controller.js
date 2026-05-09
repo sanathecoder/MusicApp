@@ -34,7 +34,12 @@ async function registerUser(req,res) {
     },process.env.JWT_SECRET)
 
 
-    res.cookie("token",token)
+    //  res.cookie("token",token)
+    res.cookie("token", token, {
+    httpOnly: true,
+    secure: true,      // HTTPS ke liye (Vercel/Railway dono HTTPS hain)
+    sameSite: "none",  // Cross-site requests ke liye zaroori hai
+});
 
     res.status(201).json({
         message: "Register Completed",
@@ -77,7 +82,11 @@ async function loginUser(req,res){
         role: user.role
     },process.env.JWT_SECRET)
 
-    res.cookie("token",token)
+    res.cookie("token", token, {
+    httpOnly: true,
+    secure: true,      // HTTPS ke liye (Vercel/Railway dono HTTPS hain)
+    sameSite: "none",  // Cross-site requests ke liye zaroori hai
+});
 
     res.status(200).json({
         message: "Login Completed",

@@ -8,6 +8,8 @@ const app = express()
 
 app.use(express.json())
 app.use(cookieparser())
+
+
 // app.use(cors({
 //   origin: "https://music-app-kappa-sand.vercel.app", // mera naya domain
 //   credentials: true
