@@ -25,7 +25,14 @@ function UploadMusic() {
       // 📝 title
       formData.append("title", title);
 
-      await API.post("/music/upload", formData);
+      // await API.post("/music/upload", formData);
+      // UploadMusic.jsx ke andar
+await API.post("/music/upload", formData, {
+  withCredentials: true, // ⭐ Browser ko cookies bhejne ki ijazat deta hai
+  headers: {
+    "Content-Type": "multipart/form-data",
+  },
+});
 
       alert("Music Uploaded 🎵");
 

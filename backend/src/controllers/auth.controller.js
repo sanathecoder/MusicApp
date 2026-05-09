@@ -82,10 +82,12 @@ async function loginUser(req,res){
         role: user.role
     },process.env.JWT_SECRET)
 
-    res.cookie("token", token, {
-    httpOnly: true,
-    secure: true,      // HTTPS ke liye (Vercel/Railway dono HTTPS hain)
-    sameSite: "none",  // Cross-site requests ke liye zaroori hai
+    // Backend Login Controller mein jahan res.cookie hai:
+res.cookie("token", token, {
+  httpOnly: true,
+  secure: true,      // Lazmi true rakhein (HTTPS ke liye)
+  sameSite: "none",  // ⭐ Sabse zaroori: "none" cross-domain cookies allow karta hai
+  maxAge: 24 * 60 * 60 * 1000 
 });
 
     res.status(200).json({
