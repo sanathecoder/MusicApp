@@ -6,20 +6,20 @@ import Login from "./pages/Login";
 import Navbar from "./components/Navbar";
 
   // User Import Pages 
-import Home from "./pages/user/Home";
-import Albums from "./pages/user/Albums";
-import AlbumDetail from "./pages/user/AlbumDetail";
-import CreatePlaylist from "./pages/user/CreatePlaylist";
-import MyPlaylists from "./pages/user/MyPlaylists";
-import MyPlaylistDetail from "./pages/user/MyPlaylistDetail";
+import Home from "./pages/Home";
+import Albums from "./pages/Albums";
+import AlbumDetail from "./pagesAlbumDetail";
+import CreatePlaylist from "./pages/CreatePlaylist";
+import MyPlaylists from "./pages/MyPlaylists";
+import MyPlaylistDetail from "./pages/MyPlaylistDetail";
 
 // Artist Import Pages 
-import CreateAlbum from "./pages/artist/CreateAlbum";
-import ArtistDashboard from "./pages/artist/ArtistDashboard";
-import UploadMusic from "./pages/artist/UploadMusic";
-import MyAlbums from "./pages/artist/MyAlbums";
-import ArtistAlbumDetail from "./pages/artist/ArtistAlbumDetail";
-import MyMusic from "./pages/artist/MyMusic";
+import CreateAlbum from "./pages/CreateAlbum";
+import ArtistDashboard from "./pages/ArtistDashboard";
+import UploadMusic from "./pages/UploadMusic";
+import MyAlbums from "./pages/MyAlbums";
+import ArtistAlbumDetail from "./pages/ArtistAlbumDetail";
+import MyMusic from "./pages/MyMusic";
 
 
 

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import API from "@/api/axios.js";
-import MusicCard from "../../components/MusicCard";
+import API from "../api/axios";
+import MusicCard from "../components/MusicCard";
 
 function Home() {
   const [music, setMusic] = useState([]);

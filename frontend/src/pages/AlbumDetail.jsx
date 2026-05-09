@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import API from "@/api/axios.js";
+import API from "../api/axios";
 
 function AlbumDetail() {
   const { id } = useParams();
